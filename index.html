@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+    <title>Dear Diary</title>
+</head>
+<body>
+<!-- ======= Preloader ======= -->
+    <section class="preloader">
+        <label for="name" class="preloader-label">Type your name here:</label>
+        <input type="text" class="preloader-text" required>
+        <button class="btn" type="submit" id="name-sub">Done</button>
+    </section>
+<!-- ======= End of Preloader ======= -->
+
+<!--======= Navigation =======-->
+    <nav id="home">
+        <div class="nav-header">
+            <div class="logo-icon">
+                <i class='bx bxs-book-bookmark'></i>
+                <h1 class="logo">DearDiary</h1>
+            </div>
+            <div class="nav-links">
+                <button class="btn links new-entry-btn create-entry-btn"><i class='bx bxs-edit'></i></button>
+                <button class="btn links all-entries-btn"><i class='bx bx-list-ul'></i></button>
+                <button class="btn links random-quote-btn"><i class='bx bxs-quote-alt-left'></i></button>
+            </div>
+        </div>
+    </nav>
+<!--======= End of Navigation =======-->
+
+<!-- ======= Main ======= -->
+    <main>
+        <div class="welcome-page">
+            <div class="title">
+                <h1>Welcome <span class="name"></span></h1>
+            </div>
+            <div class="create-entry">
+                <p>Log your first entry.</p>
+                <button class="btn btn-clr create-entry-btn">Create Entry</button>
+            </div>
+        </div>
+
+        <div class="shapes">
+            <div class="spin-cube"></div>
+            <div class="spin-cube cube-2"></div>
+            <div class="move-circle"></div>
+            <div class="move-circle circle-2"></div>
+        </div>
+    </main>
+<!-- ======= End of Main ======= -->
+
+<!-- ======= Diary Entry ======= -->
+    <section class="new-entry">
+        <form class="entry-form">
+            <label for="date" class="new-entry-label">Date:</label>
+            <input type="date" name="date" class="new-entry-date">
+            <label for="title" class="new-entry-label">Heading:</label>
+            <input type="text" class="new-entry-title" name="title" placeholder="Heading:">
+            <label for="entry" class="new-entry-label">Entry:</label>
+            <textarea name="entry" class="new-entry-text" cols="30" rows="10" placeholder="Dear Diary..."></textarea>
+            <div class="buttons">
+                <button class="btn submit-entry-btn" type="submit">Submit Entry</button>
+                <button class="btn cancel-entry-btn">Cancel</button>
+            </div>
+        </form>
+    </section>
+<!-- ======= End of Diary Entry ======= -->
+
+<!-- ======= All Entries ======= -->
+    <section class="all-entries">
+        <div class="all-entries-container">
+            <button class="exit-page-btn"><i class='bx bx-x'></i></button>
+            <div class="entries-container">
+                <button class="btn btn-clr create-entry-btn must-go">Create Entry</button>
+            </div>
+            <button class="clear-all-btn btn btn-clr">Clear All</button>
+        </div>
+    </section>
+<!-- ======= End of All Entries ======= -->
+</body>
+</html>
